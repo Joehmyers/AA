@@ -1,0 +1,11 @@
+column_name
+user_id
+first_name
+last_name
+email
+age
+signup_date
+account_type
+is_active
+last_login
+purchase_count

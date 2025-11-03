@@ -1,0 +1,6 @@
+user_id,first_name,last_name,email,age,signup_date,account_type,is_active,last_login,purchase_count
+1001,John,Doe,john.doe@example.com,28,2023-01-15,premium,true,2024-11-01,5
+1002,Jane,Smith,jane.smith@example.com,34,2023-03-22,basic,true,2024-10-30,12
+1003,Bob,Johnson,bob.j@example.com,45,2022-11-10,premium,false,2024-09-15,3
+1004,Alice,Williams,alice.w@example.com,23,2024-01-05,basic,true,2024-11-02,8
+1005,Charlie,Brown,charlie.b@example.com,31,2023-07-18,premium,true,2024-10-28,15
