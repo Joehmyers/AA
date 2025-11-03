@@ -7,6 +7,7 @@ Tests the core functions without making actual API calls
 import pandas as pd
 import sys
 import os
+import tempfile
 
 # Add current directory to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -92,7 +93,8 @@ def test_output_structure():
         print(f"  ✓ Columns: {df.columns.tolist()}")
         
         # Test writing to CSV
-        output_path = "/tmp/test_output.csv"
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as tmp:
+            output_path = tmp.name
         df.to_csv(output_path, index=False)
         
         # Verify reading back

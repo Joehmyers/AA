@@ -106,7 +106,7 @@ def enrich_column_with_llm(client, column_name, sample_values=None, model="gpt-3
         
     except json.JSONDecodeError as e:
         print(f"Error parsing JSON response for column '{column_name}': {e}")
-        print(f"Response text: {result_text}")
+        # Sanitized error - not showing full response to avoid exposing sensitive data
         return {
             "group": "categorical",
             "description": "Unable to determine description",
